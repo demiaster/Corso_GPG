@@ -1,5 +1,4 @@
 
-
 #GNU PRIVACY GUARD
 
 
@@ -355,9 +354,8 @@ rappresentata come un grafo (orientato)
 
 ##installazione
 
-`$ sudo apt-get install gnupg2`
-
-`$ gpg2 --gen-key`
+	$ sudo apt-get install gnupg2
+	$ gpg2 --gen-key
 
 --
 
@@ -367,15 +365,12 @@ rappresentata come un grafo (orientato)
 
 ##MANUTENZIONE CHIAVI (1)
 
-_operazioni da e verso keyserers_
+_operazioni da e verso keyservers_
 
-`$ gpg2 --send-keys` esporto chiavi
-
-`$ gpg2 --search-keys` cerco chiavi
-
-`$ gpg2 --recv-keys` importo chiavi
-
-`$ gpg2 --refresh-keys` controllo cambiamenti
+	$ gpg2 --send-keys # esporto chiavi
+	$ gpg2 --search-keys # cerco chiavi
+	$ gpg2 --recv-keys # importo chiavi
+	$ gpg2 --refresh-keys` # controllo cambiamenti
 
 --
 
@@ -385,9 +380,8 @@ _operazioni da e verso keyserers_
 
 ##MANUTENZIONE CHIAVI (2)
 
-`$ gpg2 --export` esporto chiavi (backup)
-
-`$ gpg2 --gen-revoke` certificato di revoca
+	$ gpg2 --export # esporto chiavi (backup)
+	$ gpg2 --gen-revoke # certificato di revoca
 
 --
 
@@ -398,26 +392,32 @@ _operazioni da e verso keyserers_
 ##CIFRIAMO COSE!
 
 * simmetrica
-	* `$ gpg2 -c nomefile`
-	* `$ gpg2 -d nomefile`
+
+
+	$ gpg2 -c nomefile
+	$ gpg2 -d nomefile
 
 --
 
 ##CIFRIAMO COSE!
 
 * asimmetrica
-	* `$ gpg2 -r "nome destinatario" -e nomefile`
-	* `$ gpg2 -o outputfile -d nomefile`
+
+
+	$ gpg2 -r "nome destinatario" -e nomefile
+	$ gpg2 -o outputfile -d nomefile
 
 --
 
 ##CIFRIAMO COSE!
 
 * firma
-	* `$ gpg2 --output doc.sig --sign doc`
-	* `$ gpg2 --output doc --decrypt doc.sig`
-	* `$ gpg2 --output doc.sig --detach-sig doc`
-	* `$ gpg2 --verify doc.sig doc`
+
+
+	$ gpg2 --output doc.sig --sign doc
+	$ gpg2 --output doc --decrypt doc.sig
+	$ gpg2 --output doc.sig --detach-sig doc
+	$ gpg2 --verify doc.sig doc
 
 --
 
@@ -435,8 +435,9 @@ _operazioni da e verso keyserers_
 
 ##GPG E PACCHETTI
 
-* `$ gpg2 --verify nomesorgente.dsc` verifica il source
-* `$ debsig-verify nomepck.deb` verifica il pacchetto
+
+	$ gpg2 --verify nomesorgente.dsc # verifica il source
+	$ debsig-verify nomepck.deb # verifica il pacchetto
 
 --
 
@@ -445,11 +446,11 @@ _operazioni da e verso keyserers_
 
 * header
 
-`To: dest@mail.cose`
 
-`From: mitt@mail.cose`
+	To: dest@mail.cose
+	From: mitt@mail.cose
+	Subject: gatti
 
-`Subject: gatti`
 
 * body: body della mail (ASCII)
 
