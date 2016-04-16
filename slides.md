@@ -478,6 +478,7 @@ _operazioni da e verso keyservers_
 
 <style>
 .reveal table {
+  color: white;
   margin: auto;
   border-collapse: collapse;
   border-spacing: 0;
