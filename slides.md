@@ -471,3 +471,22 @@ _operazioni da e verso keyserers_
 --
 
 #THAT'S ALL FOLKS!
+
+<style>
+.reveal table {
+  margin: auto;
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+.reveal table th {
+  font-weight: bold;
+}
+
+.reveal table th,
+.reveal table td {
+  text-align: left;
+  padding: 0.2em 0.5em 0.2em 0.5em;
+  border-bottom: 1px solid;
+}
+</style>
