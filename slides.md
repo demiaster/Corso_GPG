@@ -181,15 +181,16 @@ certificano il legame _utente, chiave_
 
 ###GESTIONE CHIAVI
 
-* livello pubblico: servers
-* livello privato: keyrings, trust_db
+* distribuzione: servers
+* gestione locale: keyrings, trust_db
 
 --
 
 ###LIVELLO PUBBLICO: SERVERS
 
 * chiavi memorizzate su servers
-* servers connessi tra loro (HKP, HTTPS)
+* servers connessi tra loro (protocollo di sincronizzazione)
+  interazione con client via HTTP[S]  (HKP[S])
 * sincronizzazione e propagazione delle chiavi
 
 --
@@ -389,9 +390,9 @@ _operazioni da e verso keyservers_
 
 ---
 
-##CIFRIAMO COSE!
+##CIFRIAMO COSE! (1)
 
-* simmetrica
+_simmetrica_
 
 
 	$ gpg2 -c nomefile
@@ -399,9 +400,9 @@ _operazioni da e verso keyservers_
 
 --
 
-##CIFRIAMO COSE!
+##CIFRIAMO COSE! (2)
 
-* asimmetrica
+_asimmetrica_
 
 
 	$ gpg2 -r "nome destinatario" -e nomefile
@@ -409,9 +410,9 @@ _operazioni da e verso keyservers_
 
 --
 
-##CIFRIAMO COSE!
+##FIRMIAMO COSE!
 
-* firma
+_firma_
 
 
 	$ gpg2 --output doc.sig --sign doc
@@ -468,6 +469,7 @@ _operazioni da e verso keyservers_
 * K_9 + OpenKeyChain
 * GPG Tools + Apple Mail
 * iPGMail
+* Outlook + GpgOL
 
 --
 
