@@ -269,13 +269,13 @@ untrusted | | ...
 
 _Convenzione_
 
-* $PRIM\_{Priv,A}(m)$ → A firma m
+* $SIG\_{M^A_{Priv}}(m)$ → A firma m
 
-* $PRIM\_{Pub,A}(m)$ → B verifica firma di A
+* $AUTH\_{M^A_{Pub}}(m)$ → B verifica firma di A
 
-* $SUB_{Pub,A}(m)$ → B cifra per A
+* $ENC\_{S^A_{Pub}}(m)$ → B cifra per A
 
-* $SUB_{Priv,A}(c)$ → A decifra c
+* $DEC\_{S^A_{Priv}}(c)$ → A decifra c
 
 --
 
@@ -284,10 +284,10 @@ _Convenzione_
 |$Master\_{Pub}^A$|
 |--- |
 |$ID\_A$ | 
-|$SIG\_{M\_{priv}^A}(M\_{Pub}^A, ID\_A)$ |
-|$Sub\_{pub}^A$S |
-|$SIG\_{M\_{priv}^A}(M\_{Pub}^A, S\_{pub}^A)$ |
-|$SIG\_{S\_{priv}^A}(M\_{Pub}^A, S\_{pub}^A)$ |
+|$SIG\_{M\_{Priv}^A}(M\_{Pub}^A, ID\_A)$ |
+|$Sub\_{Pub}^A$S |
+|$SIG\_{M\_{Priv}^A}(M\_{Pub}^A, S\_{Pub}^A)$ |
+|$SIG\_{S\_{Priv}^A}(M\_{Pub}^A, S\_{Pub}^A)$ |
 
 --
 
@@ -296,8 +296,8 @@ _Convenzione_
 
 _certificazione identità_
 
-* autocertificazione $SIG\_{M\_{priv}^A}(M\_{Pub}^A, ID\_A)$
-* da altri utenti $SIG\_{M\_{priv}^B}(M\_{Pub}^A, ID\_A)$
+* autocertificazione $SIG\_{M\_{Priv}^A}(M\_{Pub}^A, ID\_A)$
+* da altri utenti $SIG\_{M\_{Priv}^B}(M\_{Pub}^A, ID\_A)$
 
 --
 
@@ -305,8 +305,8 @@ _certificazione identità_
 
 _legame con sottochiavi_
 
-* $SIG\_{M\_{priv}^A}(M\_{Pub}^A, S\_{pub}^A)$
-* $SIG\_{S\_{priv}^A}(M\_{Pub}^A, S\_{pub}^A)$
+* $SIG\_{M\_{Priv}^A}(M\_{Pub}^A, S\_{Pub}^A)$
+* $SIG\_{S\_{Priv}^A}(M\_{Pub}^A, S\_{Pub}^A)$
 
 --
 
