@@ -8,8 +8,7 @@ Marta Feriani
 
 Corsi GNU/Linux Avanzati 2016
 
-//logo
-
+<img src="logo.svg" style="border: 0; padding: 0; background: transparent; box-shadow: 0 0 0;" />
 
 ---
 
@@ -336,7 +335,7 @@ certificati differenti per:
 
 rappresentata come un grafo (orientato)
 
-//disegno?
+![wot](weboftrust.png)
 
 --
 
@@ -350,6 +349,8 @@ rappresentata come un grafo (orientato)
 ---
 
 #LET'S DO STUFF
+
+![ivenoideawhatimdoing](Ive_no_idea_what_Im_doing.jpg)
 
 --
 
@@ -475,7 +476,9 @@ _firma_
 
 #THAT'S ALL FOLKS!
 
-<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licenza Creative Commons" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/88x31.png" /></a><br />Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale</a>.
+<a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img alt="Licenza Creative Commons" style="height: 4em; border-width:0" src="http://mirrors.creativecommons.org/presskit/buttons/88x31/svg/by-nc-sa.svg" /></a><br />
+
+###### Quest'opera è distribuita con Licenza <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribuzione - Non commerciale - Condividi allo stesso modo 4.0 Internazionale</a>.
 
 
 <style>
