@@ -357,7 +357,13 @@ rappresentata come un grafo (orientato)
 ##installazione
 
 	$ sudo apt-get install gnupg2
-	$ gpg2 --gen-key
+
+--
+
+
+##GENERAZIONE CHIAVI
+	
+	$ gpg2 --full-gen-key
 
 --
 
@@ -370,8 +376,9 @@ rappresentata come un grafo (orientato)
 _operazioni da e verso keyservers_
 
 	$ gpg2 --send-keys # esporto chiavi
-	$ gpg2 --search-keys # cerco chiavi
-	$ gpg2 --recv-keys # importo chiavi
+	$ gpg2 --search-keys <nome> # cerco chiavi
+	$ gpg2 --recv-keys <ID> # importo chiavi
+	$ gpg2 --import <file> # importo da file locale
 	$ gpg2 --refresh-keys` # controllo cambiamenti
 
 --
@@ -382,8 +389,8 @@ _operazioni da e verso keyservers_
 
 ##MANUTENZIONE CHIAVI (2)
 
-	$ gpg2 --export # esporto chiavi (backup)
-	$ gpg2 --gen-revoke # certificato di revoca
+	$ gpg2 --armor --export <nome> # esporto chiavi (backup)
+	$ gpg2 --gen-revoke <nome> # certificato di revoca
 
 --
 
@@ -396,8 +403,8 @@ _operazioni da e verso keyservers_
 _simmetrica_
 
 
-	$ gpg2 -c nomefile
-	$ gpg2 -d nomefile
+	$ gpg2 -c <nomefile>
+	$ gpg2 -d <nomefile>
 
 --
 
@@ -406,8 +413,8 @@ _simmetrica_
 _asimmetrica_
 
 
-	$ gpg2 -r "nome destinatario" -e nomefile
-	$ gpg2 -o outputfile -d nomefile
+	$ gpg2 -r "nome destinatario" -e <nomefile>
+	$ gpg2 -o <outputfile> -d <nomefile>
 
 --
 
@@ -416,10 +423,10 @@ _asimmetrica_
 _firma_
 
 
-	$ gpg2 --output doc.sig --sign doc
-	$ gpg2 --output doc --decrypt doc.sig
-	$ gpg2 --output doc.sig --detach-sig doc
-	$ gpg2 --verify doc.sig doc
+	$ gpg2 --output doc.sig --sign <doc>
+	$ gpg2 --output doc.sig --detach-sig <doc> # alternativo
+	$ gpg2 --output <doc> --decrypt doc.sig
+	$ gpg2 --verify doc.sig <doc>
 
 --
 
