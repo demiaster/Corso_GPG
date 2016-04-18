@@ -34,9 +34,12 @@ Corsi GNU/Linux Avanzati 2016
 
 --
 
-##GPG COME PROTOCOLLO
 
-* Gnu Privacy Guard
+
+<img src="Gnupg_logo.svg" style="border: 0; padding: 0; background: transparent; box-shadow: 0 0 0;" />
+
+___Gnu Privacy Guard___
+
 * implementazione di _OpenPGP_
 	* __P__retty __G__ood __P__rivacy
 
@@ -466,7 +469,6 @@ _firma_
 --
 
 ##E-MAIL THE HARD WAY
-// demo, mail cifrata da terminale
 
 --
 
