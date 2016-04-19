@@ -61,7 +61,7 @@ possa leggerli
 --
 
 ##1° TENTATIVO PER ALICE & BOB
-###_CIFRATURA SIMMETRICA_
+###CIFRATURA SIMMETRICA
 
 * A sceglie una chiave ___k___
 * A cifra il messaggio ___m___ per B con ___k___
@@ -76,7 +76,7 @@ possa leggerli
 
 --
 
-###_PROBLEMI CIFRATURA SIMMETRICA_
+###PROBLEMI CIFRATURA SIMMETRICA
 
 * Sia Alice che Bob devono conoscere ___k___ a priori
 	* ___k___ va scambiata di persona
@@ -86,7 +86,7 @@ possa leggerli
 --
 
 ##ALICE & BOB CI RIPROVANO
-###_CIFRATURA ASIMMETRICA_
+###CIFRATURA ASIMMETRICA
 
 * ogni utente (Alice e Bob) dispone di due chiavi
 	* chiave pubblica: cifra
