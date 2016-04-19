@@ -352,6 +352,14 @@ rappresentata come un grafo (orientato)
 ##ALCUNI DATI
 
 * 3'867'397 chiavi totali
+
+--
+
+<img src="sayan.png" style="border: 0; padding: 0; background: transparent; box-shadow: 0 0 0;" />
+
+--
+
+
 * 300k nodi isolati
 * ~117 chiavi di media per SCC
 * STRONGSET: 59'466 chiavi
@@ -389,7 +397,7 @@ _operazioni da e verso keyservers_
 	$ gpg2 --search-keys <nome> # cerco chiavi
 	$ gpg2 --recv-keys <ID> # importo chiavi
 	$ gpg2 --import <file> # importo da file locale
-	$ gpg2 --refresh-keys` # controllo cambiamenti
+	$ gpg2 --refresh-keys # controllo cambiamenti
 
 --
 
