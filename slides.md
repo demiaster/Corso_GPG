@@ -72,6 +72,10 @@ possa leggerli
 
 --
 
+<img src="symmetric.svg" style="border: 0; padding: 0; background: transparent; box-shadow: 0 0 0;" />
+
+--
+
 ###_PROBLEMI CIFRATURA SIMMETRICA_
 
 * Sia Alice che Bob devono conoscere ___k___ a priori
@@ -91,6 +95,10 @@ possa leggerli
 _Le due chiavi sono indipendenti tra loro,_ 
 
 _dall'una non è possibile ricavare l'altra_
+
+--
+
+<img src="asymmetric.svg" style="border: 0; padding: 0; background: transparent; box-shadow: 0 0 0;" />
 
 --
 
