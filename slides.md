@@ -421,8 +421,8 @@ _operazioni da e verso keyservers_
 _simmetrica_
 
 
-	$ gpg2 -c <nomefile>
-	$ gpg2 -d <nomefile>
+	$ gpg2 --symmetric <nomefile>
+	$ gpg2 --decrypt <nomefile>
 
 --
 
@@ -431,8 +431,8 @@ _simmetrica_
 _asimmetrica_
 
 
-	$ gpg2 -r "nome destinatario" -e <nomefile>
-	$ gpg2 -o <outputfile> -d <nomefile>
+	$ gpg2 --recipient "nome destinatario" --encrypt <nomefile>
+	$ gpg2 --output <outputfile> --decrypt <nomefile>
 
 --
 
