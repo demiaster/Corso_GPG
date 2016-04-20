@@ -407,7 +407,7 @@ _operazioni da e verso keyservers_
 
 ##MANUTENZIONE CHIAVI (2)
 
-	$ gpg2 --armor --export <nome> # esporto chiavi (backup)
+	$ gpg2 --armor --export <nome> # esporto chiavi
 	$ gpg2 --gen-revoke <nome> # certificato di revoca
 
 --
