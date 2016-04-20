@@ -441,10 +441,11 @@ _asimmetrica_
 _firma_
 
 
-	$ gpg2 --output doc.sig --sign <doc>
-	$ gpg2 --output doc.sig --detach-sig <doc> # alternativo
-	$ gpg2 --output <doc> --decrypt doc.sig
+	$ gpg2 --sign <doc>
+	$ gpg2 --verify
+	$ gpg2 --detach-sig <doc> # alternativo
 	$ gpg2 --verify doc.sig <doc>
+	$ gpg2 --clearsig <doc>
 
 --
 
