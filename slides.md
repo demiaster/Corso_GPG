@@ -393,7 +393,7 @@ rappresentata come un grafo (orientato)
 
 _operazioni da e verso keyservers_
 
-	$ gpg2 --send-keys # esporto chiavi
+	$ gpg2 --send-key <ID> # esporto chiavi
 	$ gpg2 --search-keys <nome> # cerco chiavi
 	$ gpg2 --recv-keys <ID> # importo chiavi
 	$ gpg2 --import <file> # importo da file locale
