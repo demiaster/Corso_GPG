@@ -42,7 +42,7 @@ Corsi GNU/Linux Avanzati 2016
 * implementazione di _OpenPGP_
 	* __P__retty __G__ood __P__rivacy
 
-* cosa fa? tutto
+* cosa fa? tante cose
 
 ---
 
@@ -129,7 +129,7 @@ _può decifrare il messaggio_
 
 ###THERE'S STILL WORK TO DO
 
-Quando Bob riceve ___m___ ha la _certezza_ che il messaggio sia per lui
+Quando Bob riceve ___m___ ha la _certezza_ che il messaggio sia per lui.
 
 Non ha invece garanzie _su chi_ abbia mandato effettivamente ___m___
 
